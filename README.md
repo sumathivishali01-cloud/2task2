@@ -48,3 +48,29 @@ public class Cat extends Animal {
         System.out.println("Color: " + color);
     }
 }
+// Dog.java
+
+public class Dog extends Animal {
+
+    private String breed;
+
+    // Constructor
+    public Dog(String name, int age, String breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+
+    // Overriding makeSound()
+    @Override
+    public void makeSound() {
+        System.out.println(name + " says: Woof! Woof!");
+    }
+
+    // Display details
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Breed: " + breed);
+    }
+}
+
